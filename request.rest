@@ -1,0 +1,35 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Benny",
+    "password": "password",
+    "phoneNumber": "+99999999999" 
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "name": "Benny",
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3000/users/sms
+Content-Type: application/json
+
+{
+    "name": "Benny",
+    "otp": "6645" 
+}
+
+###
+GET http://localhost:3000/sms
